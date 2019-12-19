@@ -29,9 +29,9 @@
 - 将依赖图包装进一个能够在所有浏览器运行的立即执行函数
 - 输出到 `./dist/bundle.js` 
 
-完整打包代码及解释详见：
+完整打包代码及解释详见：[index.js](https://github.com/sisterAn/minipack/blob/master/index.js)
 
-示例代码详见：
+示例代码详见：[src](https://github.com/sisterAn/minipack/tree/master/src)
 
-打包后的文件详见：
+打包后的文件详见：[bundle.js](https://github.com/sisterAn/minipack/blob/master/dist/bundle.js)
 
