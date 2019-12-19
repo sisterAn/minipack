@@ -1,0 +1,18 @@
+{
+  "name": "minipack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./index.js",
+    "start": "node ./dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/parser": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/traverse": "^7.7.4"
+  }
+}
