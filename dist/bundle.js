@@ -16,14 +16,14 @@
 
 var _message = _interopRequireDefault(require("./message.js"));
 
-var _name = require("./name.js");
+var _hello = require("./hello.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 (0, _message["default"])();
-console.log('----name-----: ', _name.name);
+console.log('----hello-----: ', _hello.hello);
       },
-      {"./message.js":"src/message.js","./name.js":"src/name.js"},
+      {"./message.js":"src/message.js","./hello.js":"src/hello.js"},
     ],'src/message.js': [
       function(require, module, exports) {
         "use strict";
