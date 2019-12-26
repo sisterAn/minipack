@@ -29,7 +29,7 @@
 - 将依赖图包装进一个能够在所有浏览器运行的立即执行函数
 - 输出到 `./dist/bundle.js` 
 
-方案设计机原理解读详见：[JavaScript 模块捆绑器](https://github.com/sisterAn/blog/issues/69)
+方案设计机原理解读详见：[窥探原理：JavaScript 模块捆绑器](https://github.com/sisterAn/blog/issues/69)
 
 完整打包代码及解释详见：[index.js](https://github.com/sisterAn/minipack/blob/master/index.js)
 
