@@ -1,3 +1,5 @@
-import hello from './message.js'
+import message from './message.js'
+import {name} from './name.js'
 
-hello()
+message()
+console.log('----name-----: ', name)
