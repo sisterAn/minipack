@@ -161,13 +161,31 @@ function bundle(graph) {
   return result
 }
 
+/**
+ * 输出打包
+ * @param {string} path 路径
+ * @param {string} result 内容
+ */
+function writeFile(path, result) {
+  // 写入 ./dist/bundle.js
+  fs.writeFile(path, result, (err) => {
+    if (err) throw err;
+    console.log('文件已被保存');
+  })
+}
+
 // 获取依赖图
 const graph = createGraph(entry)
-
 // 打包
 const result = bundle(graph)
-// 写入 ./dist/bundle.js
-fs.writeFile(`${output.path}/${output.filename}`, result, (err) => {
-  if (err) throw err;
-  console.log('文件已被保存');
+// 输出
+fs.access(`${output.path}/${output.filename}`, (err) => {
+  if(!err) {
+    writeFile(`${output.path}/${output.filename}`, result)
+  } else {
+    fs.mkdir(output.path, { recursive: true }, (err) => {
+      if (err) throw err;
+      writeFile(`${output.path}/${output.filename}`, result)
+    });
+  }
 })
