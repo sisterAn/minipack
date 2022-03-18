@@ -76,7 +76,7 @@ function createGraph(entry) {
     const dirname = path.dirname(filename)
     assert.dependencies.forEach(relativePath => {
       // 获取绝对路径，以便于 createAsset 读取文件
-      const absolutePath = path.join(dirname, relativePath)
+      const absolutePath = path.join(dirname, relativePath).replace(/\\/g, "/")
       // 与当前 assert 关联
       assert.mapping[relativePath] = absolutePath
       // 依赖文件没有加入到依赖图中，才让其加入，避免模块重复打包
